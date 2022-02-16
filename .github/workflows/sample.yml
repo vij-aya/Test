@@ -1,15 +1,16 @@
-name: Shell Commands
+name:  Shell Commands
 on: [push]
 jobs:
-  run-Shell-Command:
+  run-Shell-Commands:
     runs-on: ubuntu-latest
     steps:
       - name: echo a string
-        run: echo "Add Actions"
-  run-Shell-Command2:
+        run: echo "Work Action"
+  run-Shell-Commands2:
     runs-on: ubuntu-latest
     steps:
-      - name: Multiple line
+      - name: Multiple Lines
         run: |
-          node -v
-          npm -v
+            node -v
+            npm  -v
+
