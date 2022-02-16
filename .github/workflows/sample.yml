@@ -1,0 +1,15 @@
+name: Shell Commands
+on: [push]
+jobs:
+  run-Shell-Command:
+    runs-on: ubuntu-latest
+    steps:
+      - name: echo a string
+        run: echo "Git Actions"
+  run-Shell-Command2:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Multiple line
+        run: |
+          node -v
+          npm -v
